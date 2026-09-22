@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the DASC 2026 paper."
+title: "QPRA: Query-Parameter Representation Alignment for SQL Injection Detection"
+type: software
+version: 1.0.0
+date-released: 2026-09-13
+repository-code: "https://github.com/mohtork/sqli-query-parameter-representation-alignment"
+authors:
+  - family-names: "Torkey"
+    given-names: "Muhammed"
+  - family-names: "Manzoor"
+    given-names: "Jawad"
+preferred-citation:
+  type: conference-paper
+  title: "Reducing False Positives in Real-Traffic SQL Injection Detection via Query-Parameter Representation Alignment"
+  authors:
+    - family-names: "Torkey"
+      given-names: "Muhammed"
+    - family-names: "Manzoor"
+      given-names: "Jawad"
+  year: 2026
+  conference:
+    name: "24th IEEE International Conference on Dependable, Autonomic and Secure Computing (DASC 2026)"

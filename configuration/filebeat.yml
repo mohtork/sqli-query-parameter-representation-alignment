@@ -1,0 +1,16 @@
+filebeat.inputs:
+  - type: filestream
+    id: web-access-log
+    enabled: true
+    paths:
+      - /var/log/nginx/access.log
+      # For Apache, use the appropriate access log path, e.g.:
+      # - /var/log/apache2/access.log
+
+output.kafka:
+  hosts: ["<kafka-host>:9092"]
+  topic: "access-logs"
+  codec.format:
+    string: '%{[message]}'
+
+logging.level: info

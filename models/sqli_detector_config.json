@@ -1,0 +1,17 @@
+{
+  "detector": "sqli",
+  "model_version": "nb27_raw",
+  "vectorizer_path": "27_vectorizer.joblib",
+  "classifier_path": "27_rf_raw.joblib",
+  "t_low": 0.65,
+  "t_high": 0.81,
+  "feature_type": "char_ngram_plus_symbol_counts",
+  "structural_features": [
+    "'", "\"", ";", "--", "#", "/*", "*/", "*", "+",
+    "|", "(", ")", ">", "<", "\\", "/", "="
+  ],
+  "aggregation": "max_per_query_parameter",
+  "training_representation": "url_decoded_query_parameter_values",
+  "calibrated_on": "NB27 controlled development/evaluation thresholds",
+  "notes": "SQLi-only NB27 deployment configuration used by the QPRA pipeline."
+}
